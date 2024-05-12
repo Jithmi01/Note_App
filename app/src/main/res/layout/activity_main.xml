@@ -1,48 +1,37 @@
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#603F59"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/noteback1">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="32dp"
+        android:src="@drawable/notelogo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.645"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.427" />
 
-    <TextView
-        android:id="@+id/notes_heading"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/poppins_bold_italic"
-        android:text="Notes"
-        android:textColor="@color/white"
-        android:textSize="18sp" />
-
-    <!-- Highlight: Renamed ID -->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/note_recycler_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="50dp"
-        android:background="@drawable/appbackground"
-        android:padding="16dp"/>
-
-    <!-- Highlight: Renamed ID -->
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/add_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        app:srcCompat="@drawable/baseline_add_24"
-        android:tint="@color/white"
-        android:backgroundTint="#603F59"
-        android:contentDescription="Add Note"/>
-
-</RelativeLayout>
+    <Button
+        android:id="@+id/start1"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="64dp"
+        android:fontFamily="@font/poppins"
+        android:text="Go"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
