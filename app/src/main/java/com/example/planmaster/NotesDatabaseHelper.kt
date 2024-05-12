@@ -129,8 +129,8 @@ class NotesDBHelper(context: Context) :
         private const val DATABASE_VERSION = 1
         private const val DATABASE_NAME = "MyNotesDB"
         private const val TABLE_NOTES = "MyNotes"
-        private const val COLUMN_ID = "id"
         private const val COLUMN_TITLE = "title"
+        private const val COLUMN_ID = "id"   
         private const val COLUMN_CONTENT = "content"
     }
 }
