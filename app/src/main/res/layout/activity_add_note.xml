@@ -1,0 +1,59 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddNoteActivity"
+    android:background="@drawable/appbackground"
+    android:padding="12dp">
+
+        <!-- Highlight: Renamed ID -->
+        <TextView
+            android:id="@+id/add_note_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins"
+        android:text="Add Note."
+        android:textStyle="bold"
+        android:textColor="#55046A"
+        android:textSize="24sp" />
+
+
+        <ImageView
+            android:id="@+id/save_button"
+            android:layout_width="34dp"
+            android:layout_height="35dp"
+            android:layout_alignTop="@id/add_note_heading"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="6dp"
+            android:src="@drawable/done" />
+
+        <EditText
+            android:id="@+id/title_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Enter the title"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:background="@drawable/blue_border"
+        android:layout_below="@id/add_note_heading"
+        android:layout_marginTop="16dp"
+        android:maxLines="1"
+        android:fontFamily="@font/poppins"/>
+        <!-- Highlight: Renamed ID -->
+        <EditText
+            android:id="@+id/content_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Enter the Description"
+        android:gravity="top"
+        android:padding="12dp"
+        android:textSize="18sp"
+        android:background="@drawable/blue_border"
+        android:layout_below="@id/title_edit_text"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/poppins"/>
+</RelativeLayout>

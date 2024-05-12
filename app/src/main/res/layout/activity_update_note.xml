@@ -1,0 +1,58 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UpdateNoteActivity"
+    android:background="@drawable/appbackground"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/edit_note_heading"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="16dp"
+    android:fontFamily="@font/poppins"
+    android:text="Edit Note."
+    android:textStyle="bold"
+    android:textColor="#6C0A70"
+    android:textSize="24sp" />
+
+
+    <ImageView
+        android:id="@+id/update_save_button"
+        android:layout_width="34dp"
+        android:layout_height="35dp"
+    android:src="@drawable/done"
+    android:layout_alignParentEnd="true"
+    android:layout_alignTop="@id/edit_note_heading"
+    android:layout_marginEnd="6dp"/>
+
+    <EditText
+        android:id="@+id/update_title_edit_text"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:hint="Enter the title"
+    android:padding="12dp"
+    android:textSize="20sp"
+    android:background="@drawable/blue_border"
+    android:layout_below="@id/edit_note_heading"
+    android:layout_marginTop="16dp"
+    android:maxLines="1"
+    android:fontFamily="@font/poppins"/>
+
+    <EditText
+        android:id="@+id/update_content_edit_text"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:hint="Enter the Description"
+    android:gravity="top"
+    android:padding="12dp"
+    android:textSize="18sp"
+    android:background="@drawable/blue_border"
+    android:layout_below="@id/update_title_edit_text"
+    android:layout_marginTop="12dp"
+    android:fontFamily="@font/poppins"/>
+</RelativeLayout>
